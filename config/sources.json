@@ -1,0 +1,15 @@
+{
+  "user_agent": "security-concept-web-scraper/0.1 (+local security digest)",
+  "timeout_seconds": 15,
+  "retries": 2,
+  "sources": [
+    {"id": "cisa-kev", "type": "json", "enabled": true, "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"},
+    {"id": "nvd", "type": "nvd", "enabled": true, "url": "https://services.nvd.nist.gov/rest/json/cves/2.0"},
+    {"id": "github-advisories", "type": "github", "enabled": true, "url": "https://api.github.com/advisories"},
+    {"id": "owasp", "type": "rss", "enabled": true, "url": "https://cheatsheetseries.owasp.org/News.xml"},
+    {"id": "krebs", "type": "rss", "enabled": true, "url": "https://krebsonsecurity.com/feed/"},
+    {"id": "cso", "type": "curated-link", "enabled": false, "url": "https://www.csoonline.com/", "note": "Curated reference only; no HTML scraping."},
+    {"id": "dark-reading", "type": "curated-link", "enabled": false, "url": "https://www.darkreading.com/", "note": "Curated reference only; no HTML scraping."},
+    {"id": "msrc", "type": "msrc", "enabled": false, "note": "Set MSRC_API_BASE only after selecting a documented Microsoft API."}
+  ]
+}
