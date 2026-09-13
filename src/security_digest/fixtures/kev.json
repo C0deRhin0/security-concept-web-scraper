@@ -1,0 +1,1 @@
+{"vulnerabilities":[{"cveID":"CVE-2026-0001","vendorProject":"Example Corp","product":"Gateway","vulnerabilityName":"Example remote execution","dateAdded":"2026-09-19","requiredAction":"Apply the vendor's fixed release.","notes":"https://example.invalid/kev/CVE-2026-0001"}]}
