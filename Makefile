@@ -5,3 +5,4 @@ test:
 
 smoke:
 	PYTHONPATH=src python -m security_digest --no-network --format markdown
+# Capture a cleanup item for makefile
