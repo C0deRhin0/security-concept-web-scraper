@@ -84,3 +84,4 @@ make smoke
 - Add repository description, topics, and a private vulnerability-reporting
   contact; then publish from your own GitHub account.
 - Do not commit generated files under `output/`, `cache/`, `data/`, or `logs/`.
+<!-- Refine the surrounding context for project documentation -->
