@@ -21,3 +21,4 @@ def load_config(path: str | Path) -> dict:
         if not isinstance(source, dict) or not source.get("id") or not source.get("type"):
             raise ValueError("every source requires id and type")
     return raw
+# Clarify implementation notes for config module
