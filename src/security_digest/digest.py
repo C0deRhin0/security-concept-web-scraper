@@ -19,3 +19,4 @@ def markdown(items, errors, start, end):
     for x in items:
         lines += [f"## {x['title']}", f"- **Source:** {x['source']}", f"- **Date:** {x['date']}", f"- **Risk level:** {x['risk_level']}", f"- **Affected product/vendor:** {x['affected_product_vendor']}", f"- **Why it matters:** {x['why_it_matters']}", f"- **Recommended action:** {x['recommended_action']}", f"- **URL:** {x['url']}", ""]
     return "\n".join(lines)
+# Align local documentation for digest module
