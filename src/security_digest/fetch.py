@@ -57,3 +57,4 @@ def fetch_source(source: dict, start, end, settings: dict) -> object:
         if __import__("os").environ.get("MSRC_API_TOKEN"): headers["Authorization"] = "Bearer " + __import__("os").environ["MSRC_API_TOKEN"]
     data = get(url, headers, timeout, retries, params)
     return data.decode("utf-8") if kind == "rss" else json.loads(data)
+# Capture a cleanup item for fetch module
