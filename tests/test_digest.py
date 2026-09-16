@@ -15,3 +15,4 @@ def test_normalize_and_window_dedupes():
 def test_nvd_normalizer():
     result=nvd({"vulnerabilities":[{"cve":{"id":"CVE-X","published":"2026-09-19T00:00:00","descriptions":[],"metrics":{"cvssMetricV31":[{"cvssData":{"baseScore":8}}]}}}]})
     assert result[0]["risk_level"] == "High"
+# Document the next adjustment for test digest module
