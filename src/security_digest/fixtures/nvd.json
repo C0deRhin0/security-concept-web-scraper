@@ -1,2 +1,1 @@
 {"vulnerabilities":[{"cve":{"id":"CVE-2026-0002","published":"2026-09-19T08:00:00.000","descriptions":[{"lang":"en","value":"A high severity flaw in Example Server."}],"metrics":{"cvssMetricV31":[{"cvssData":{"baseScore":8.1}}]},"references":[{"url":"https://example.invalid/nvd/CVE-2026-0002"}]}}]}
-

@@ -28,4 +28,3 @@ security_digest = ["fixtures/*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
-# Capture a cleanup item for pyproject

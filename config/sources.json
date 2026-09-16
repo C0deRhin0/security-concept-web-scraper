@@ -13,4 +13,3 @@
     {"id": "msrc", "type": "msrc", "enabled": false, "note": "Set MSRC_API_BASE only after selecting a documented Microsoft API."}
   ]
 }
-

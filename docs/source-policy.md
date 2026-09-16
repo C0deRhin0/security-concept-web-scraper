@@ -12,4 +12,3 @@
 Respect upstream rate limits, terms, and attribution. The project fetches only
 configured public endpoints and does not attempt authentication unless the user
 places an optional token in their local environment.
-<!-- Align local documentation for source policy documentation -->

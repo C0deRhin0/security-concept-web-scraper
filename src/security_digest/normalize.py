@@ -58,4 +58,3 @@ def rss(text, label):
 
 def normalize(source, data):
     return {"json": kev, "nvd": nvd, "github": github, "rss": lambda d: rss(d, source["id"])}.get(source["type"], lambda _: [])(data)
-# Capture a cleanup item for normalize module

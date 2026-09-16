@@ -44,4 +44,3 @@ def main(argv=None):
     return 0
 
 if __name__ == "__main__": main()
-# Review follow-up details for cli module

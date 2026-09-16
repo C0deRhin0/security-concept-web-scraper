@@ -11,4 +11,3 @@ def test_input_validation():
     try: main(["--days", "0"])
     except SystemExit as exc: assert "between" in str(exc)
     else: assert False
-# Refine the surrounding context for test cli module

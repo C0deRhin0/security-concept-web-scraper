@@ -1,2 +1,1 @@
 [{"ghsa_id":"GHSA-test-0002","summary":"Example dependency update","published_at":"2026-09-19T09:00:00Z","html_url":"https://github.com/advisories/GHSA-test-0002","cvss":{"score":7.5},"vulnerabilities":[{"package":{"name":"example-lib"}}],"description":"Update example-lib to address a vulnerability."}]
-
