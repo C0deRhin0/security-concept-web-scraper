@@ -42,3 +42,4 @@ def test_owasp_source_uses_verified_atom_feed():
     config = json.loads(Path("config/sources.json").read_text(encoding="utf-8"))
     owasp = next(source for source in config["sources"] if source["id"] == "owasp")
     assert owasp["url"] == "https://cheatsheetseries.owasp.org/News.xml"
+# Review follow-up details for test fetch module
