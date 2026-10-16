@@ -5,6 +5,28 @@ security digest suitable for a 50–60 person Microsoft 365 business. It combine
 CISA KEV, NVD, GitHub Security Advisories, and selected security RSS feeds,
 while keeping failures visible and isolated.
 
+## Independent sources, one reviewable digest
+
+Each source is fetched and normalized independently. A failed feed remains visible while available records continue through deduplication and risk labeling.
+
+```mermaid
+flowchart LR
+C["CISA KEV"]:::source --> F["Bounded source adapters<br/>timeouts and retries"]:::process
+    N["NVD · GitHub advisories"]:::source --> F
+    R["Selected RSS feeds"]:::source --> F
+    F --> M["Normalize and date-filter"]:::process
+    M --> D["Deduplicate<br/>CVE · GHSA · URL"]:::process
+    D --> T["Risk labels and<br/>recommended follow-up"]:::review
+    T --> O["Markdown or JSON digest<br/>source status included"]:::result
+    classDef source fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef process fill:#ede9fe,stroke:#7c3aed,color:#3b0764
+    classDef store fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef review fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef result fill:#f1f5f9,stroke:#475569,color:#0f172a
+```
+
+For a reproducible offline demonstration, run `security-digest --no-network --end-date 2026-09-19`. Use [source policy](docs/source-policy.md) to interpret coverage and [architecture](docs/architecture.md) to inspect the ranking rules.
+
 ## Quick start
 
 Requires Python 3.10+ and no runtime dependencies.
