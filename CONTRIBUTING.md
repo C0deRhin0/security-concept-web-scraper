@@ -6,4 +6,3 @@ normalizers; do not add credentials, personal data, or scraped paywalled HTML.
 
 For a new feed, add a `rss` source in `config/sources.json`, document its terms
 and purpose in `docs/source-policy.md`, and use its stable feed URL.
-<!-- Clarify implementation notes for contributing documentation -->
