@@ -1,0 +1,20 @@
+{
+  "project": "Security Digest",
+  "kind": "Generated report",
+  "note": "Offline fixture digest; not current threat intelligence.",
+  "capturedAt": "2026-10-23T05:46:44.035Z",
+  "screens": [
+    {
+      "file": "desktop.webp",
+      "caption": "Generated report · deterministic local demonstration",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "file": "mobile.webp",
+      "caption": "Responsive interface at 390 pixels",
+      "width": 390,
+      "height": 844
+    }
+  ]
+}

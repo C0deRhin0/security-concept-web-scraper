@@ -106,3 +106,13 @@ make smoke
 - Add repository description, topics, and a private vulnerability-reporting
   contact; then publish from your own GitHub account.
 - Do not commit generated files under `output/`, `cache/`, `data/`, or `logs/`.
+
+## Captures
+
+Offline fixture digest; not current threat intelligence.
+
+![Generated report · deterministic local demonstration](docs/screenshots/desktop.webp)
+
+![Responsive interface at 390 pixels](docs/screenshots/mobile.webp)
+
+Full capture descriptions and provenance: [captures.json](docs/screenshots/captures.json).
